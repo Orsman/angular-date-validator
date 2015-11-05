@@ -1,0 +1,17 @@
+<!doctype>
+<html ng-app="app" ng-controller="AppCtrl as main">
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Angular date validator</h1>
+      <p>A custom type of input field that only allows numbers and will validate the input-field to a string in the format of "yyyy-mm-dd".</p>
+      <input type="text" ng-model="main.date" jf-date-validator placeholder="yyyy-mm-dd">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="jfDateValidator.js"></script>
+  </body>
+</html>
