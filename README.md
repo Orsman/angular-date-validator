@@ -9,7 +9,6 @@ Created a custom type of input field that will only allow numbers and will valid
 
 
 #####TODO:
-- make sure only number a being added. (currently - and ' can be added).
 - set up trigger event for "input".
 - bring back selection.
 - possibility to select the year and type in a new one. now there is a '-' added.

@@ -101,6 +101,7 @@
       // Set up a event listener to the keyboard and depending
       // of what key user pressed we should do different actions.
       elem[0].addEventListener('keydown', function(e) {
+        // Convert Unicode number into a character
         var digit = String.fromCharCode(e.which);
 
         // User pressed a number
@@ -111,6 +112,11 @@
         // User pressed "backspace"
         else if (e.which === 8) {
           _formatBackDate(e);
+        }
+
+        // User click on a button we don't care about -> Cancel the event
+        else {
+          e.preventDefault();
         }
 
       });
