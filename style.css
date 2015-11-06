@@ -38,8 +38,7 @@ input[type="text"] {
   font-size: 16px;
   border-radius: 3px;
   background-color: #403e45;
-  border: none;
-  /*color: #76737c;*/
+  border: 2px solid transparent;
   color: #fff;
   opacity: .7;
 }
@@ -47,4 +46,12 @@ input[type="text"] {
 input[type="text"]:focus,
 input[type="text"]:active {
   outline: none;
+}
+
+input[type="text"].ng-dirty.ng-valid {
+  border-color: #27933b;
+}
+
+input[type="text"].ng-dirty.ng-invalid {
+  border-color: #eb5050;
 }

@@ -73,11 +73,6 @@
       var target = e.currentTarget;
       var value = target.value;
 
-      // Only do something when user presses backspace
-      if (e.which !== 8) {
-        return;
-      }
-
       // if ((target.prop('selectionStart') !== null) && target.prop('selectionStart') !== value.length) {
       //   return;
       // }
